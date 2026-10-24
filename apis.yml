@@ -1,25 +1,89 @@
 aid: murj
+
 name: Murj
-description: 'Murj is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by true-ventures) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Murj provides a suite of software solutions for cardiology practices, including a CIED management platform, integrated heart‑failure monitoring, ambulatory cardiac monitoring, remote patient monitoring, pulmonary artery pressure monitoring, and clinical services. The products are designed to help clinics manage cardiac devices and patient data, streamline workflows, and improve care delivery.'
+
 url: https://raw.githubusercontent.com/api-evangelist/murj/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-24'
+
 modified: '2026-10-24'
+
 tags:
-- Company
-apis: []
+- Cardiac Device Management
+- Remote Patient Monitoring
+- Heart Failure Monitoring
+- Ambulatory Cardiac Monitoring
+- Pulmonary Artery Pressure Monitoring
+- Clinical Services
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- true-ventures
+
 common:
+- type: Vendors
+  url: vendors/murj-vendors.yml
+- type: Compliance
+  url: https://murj.com/security/
+- type: LLMsTxt
+  url: llms/murj-llms.txt
+- type: SecurityTxt
+  url: well-known/murj-help-security.txt
+- type: WellKnown
+  url: well-known/murj-well-known.yml
+- type: Hosts
+  url: hosts/murj-hosts.yml
+- type: TermsOfService
+  url: https://murj.com/terms-and-conditions/
+- type: Support
+  url: https://help.murj.com/en/
+- type: Security
+  url: https://murj.com/security/
+- type: Blog
+  url: https://murj.com/blog/
+- type: Documentation
+  url: https://help.murj.com/
+- type: TrustCenter
+  url: security/murj-trust-center.yml
+- type: DomainSecurity
+  url: security/murj-domain-security.yml
 - type: Website
   url: https://murj.com
+
+apis: []
+
+x-backed-by:
+- true-ventures
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-24'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://help.murj.com/mcp
+    status: 403
+  - url: https://murj.com
+    status: 200
+x-enrichment:
+  date: '2026-10-24'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

@@ -1,0 +1,16 @@
+generated: '2026-10-24'
+method: none
+source:
+- https://zapier.com/apps/murj/integrations
+- https://n8n.io/integrations/murj/
+- https://composio.dev/toolkits/murj
+- https://monid.ai/tools/murj
+checked:
+- https://composio.dev/toolkits/murj
+- https://monid.ai/tools/murj
+- https://n8n.io/integrations/murj/
+- https://zapier.com/apps/murj/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

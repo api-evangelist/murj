@@ -1,0 +1,15 @@
+generated: '2026-10-24'
+method: searched
+probe: true
+source: https://murj.com/security/
+url: https://murj.com/security/
+certifications:
+- SOC 2
+- HIPAA
+- GDPR
+evidence:
+- source: https://murj.com/security/
+  keywords:
+  - soc2
+  - hipaa
+  - gdpr
